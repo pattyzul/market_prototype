@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>61 Market</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> 
+</head>  
+<body>
+  <!-- Navbar -->
+  <header id="header">
+    <div class="container nav-container">
+      <div class="logo">61 Market</div>
+      <ul id="sidemenu" class="nav-menu">
+        <li><a href="#header">Main</a></li>
+        <li><a href="#market">Market</a></li>
+        <li><a href="#zone">Zone</a></li>
+        <li><a href="#maps">Market Map</a></li>
+        <li><a href="#UserReview">User Review</a></li>
+        <li><a href="#Contact">Contact</a></li>
+        <i class="fas fa-times" onclick="closemenu()"></i>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Image Placeholder -->
+  <section class="hero">
+    <div class="hero-content">
+      <img src ="https://img.freepik.com/free-photo/street-market-sunset_23-2151529920.jpg">
+    </div>
+  </section>
+
+  <!-- Market Section -->
+  <section id="market" class="container">
+    <h1 class="section-title">Market</h1>
+    <p class="section-sub">market</p>
+    <div class="btn-group">
+      <button class="btn-dark">Button</button>
+      <button class="btn-outline">Button</button>
+    </div>
+  </section>
+
+  <!-- Zone Section -->
+  <section id="zone" class="container">
+    <h1 class="section-title">Zone</h1>
+    <div class="card-grid">
+      <div class="card">
+        <img src="https://st2.depositphotos.com/1194063/11986/i/950/depositphotos_119865604-stock-photo-assortment-of-fresh-vegetables.jpg" alt="Vegetable Zone" class="card-img">
+        <h3>Vegetables</h3>
+        <p><a href="#">Learn more →</a></p>
+      </div>
+      <div class="card">
+        <img src = "https://thumbs.dreamstime.com/b/food-high-protein-rustic-wooden-background-healthy-diet-eating-top-view-68666423.jpg" alt="Meat and Fish Zone" class="card-img">
+        <h3>Meat and Fish</h3>
+        <p><a href="#">Learn more →</a></p>
+      </div>
+      <div class="card">
+        <img src ="https://asianinspirations.com.au/wp-content/uploads/2020/02/01_SouthtoNorth_1920x1280.jpg" alt="Vegetable Zone" class="card-img">
+        <h3>Food</h3>
+        <p><a href="#">Learn more →</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Maps Section -->
+  <section id="maps" class="container maps-section">
+    <div class="maps-text">
+      <h1 class="section-title">Maps</h1>
+      <p>This minimap to the market</p>
+    </div>
+    <div class="maps-img">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3877.2202223076647!2d100.4967855250883!3d13.644363736736361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2a318e39e7bbb%3A0xffe10a40fa502966!2sTungkru%20Market%20(New)!5e0!3m2!1sen!2sth!4v1756963206868!5m2!1sen!2sth" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section id="UserReview" class="container">
+    <h1 class="section-title">REVIEWS</h1>
+    <p>รีวิวจากผู้ใช้ตลาดจริง เพื่อนำไปปรับปรุงและพัฒนา</p>
+    <div class="review-grid">
+      <div class="review">
+        <div class="stars">★★★★★</div>
+        <h3>ตลาดสะอาด</h3>
+        <div class="review-meta">
+          <div class="avatar">JD</div>
+          <div>
+            <p><strong>Joonnawan saelim</strong></p>
+            <p>Samutprakan</p>
+          </div>
+          <span class="review-brand">personal</span>
+        </div>
+      </div>
+      <div class="review">
+        <div class="stars">★★★</div>
+        <h3>เดินสบายมาก แต่พื้นไม่สะอาด</h3>
+        <div class="review-meta">
+          <div class="avatar">JS</div>
+          <div>
+            <p><strong>Nitaya saifon</strong></p>
+            <p>Bangkok .</p>
+          </div>
+          <span class="review-brand">personal</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>Team Boss P © 2025</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){ sidemenu.style.right = "0"; }
+    function closemenu(){ sidemenu.style.right = "-200px"; }
+  </script>
+</body>
+</html>
